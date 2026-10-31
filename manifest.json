@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "C8 Video Hız Yapılandırma Aracı",
+  "version": "1.0.0",
+  "description": "cinema8 altyapısı kullanan siteler için video hızı ayarlama ve ekran görüntüsü alma aracı.",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["buraya istediğiniz sitenin linklerini yazabilirsiniz."],
+      "all_frames": true,
+      "run_at": "document_idle",
+      "js": ["content.js"]
+    }
+  ]
+}
